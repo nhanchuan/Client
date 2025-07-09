@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WebCauLong/.vs/WebCauLong
+/WebCauLong/WebCauLong/bin/Debug/net9.0
+/WebCauLong/WebCauLong/obj
