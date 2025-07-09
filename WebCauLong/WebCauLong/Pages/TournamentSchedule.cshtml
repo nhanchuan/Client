@@ -1,0 +1,115 @@
+@page
+@model TournamentScheduleModel
+@{
+    ViewData["Title"] = "Lịch thi đấu";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="mb-4">
+    <p class="lead">Lịch các giải đấu và sự kiện sắp tới của câu lạc bộ</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Giải đấu tháng 1/2025</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Ngày:</strong> 15/01/2025 - 16/01/2025</p>
+                <p><strong>Thời gian:</strong> 8:00 - 18:00</p>
+                <p><strong>Địa điểm:</strong> Sân cầu lông Thống Nhất</p>
+                <p><strong>Thể thức:</strong> Đơn nam, Đơn nữ, Đôi nam, Đôi nữ, Đôi mixed</p>
+                <p><strong>Phí tham gia:</strong> 200.000 VNĐ/người</p>
+                <span class="badge bg-success">Đang nhận đăng ký</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">Giao lưu với CLB Thể Thao ABC</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Ngày:</strong> 22/01/2025</p>
+                <p><strong>Thời gian:</strong> 14:00 - 17:00</p>
+                <p><strong>Địa điểm:</strong> Sân cầu lông Hoàng Mai</p>
+                <p><strong>Thể thức:</strong> Giao hữu đôi mixed</p>
+                <p><strong>Phí tham gia:</strong> Miễn phí cho thành viên</p>
+                <span class="badge bg-info">Sắp diễn ra</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0">Giải đấu mùa xuân 2025</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Ngày:</strong> 05/02/2025 - 07/02/2025</p>
+                <p><strong>Thời gian:</strong> 8:00 - 19:00</p>
+                <p><strong>Địa điểm:</strong> Cung thể thao Quần Ngựa</p>
+                <p><strong>Thể thức:</strong> Tất cả các nội dung</p>
+                <p><strong>Phí tham gia:</strong> 300.000 VNĐ/người</p>
+                <span class="badge bg-warning text-dark">Sắp mở đăng ký</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h5 class="mb-0">Giải vô địch CLB 2024</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Ngày:</strong> 15/12/2024 - 16/12/2024</p>
+                <p><strong>Thời gian:</strong> 8:00 - 18:00</p>
+                <p><strong>Địa điểm:</strong> Sân cầu lông Thống Nhất</p>
+                <p><strong>Thể thức:</strong> Tất cả các nội dung</p>
+                <p><strong>Kết quả:</strong> <a href="#" class="text-primary">Xem kết quả</a></p>
+                <span class="badge bg-secondary">Đã kết thúc</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h4>Lịch tập luyện thường xuyên</h4>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Thứ</th>
+                    <th>Thời gian</th>
+                    <th>Địa điểm</th>
+                    <th>Đối tượng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Thứ 2, 4, 6</td>
+                    <td>19:00 - 21:00</td>
+                    <td>Sân cầu lông Thống Nhất</td>
+                    <td>Tất cả thành viên</td>
+                </tr>
+                <tr>
+                    <td>Thứ 7</td>
+                    <td>8:00 - 12:00</td>
+                    <td>Sân cầu lông Hoàng Mai</td>
+                    <td>Tập luyện nâng cao</td>
+                </tr>
+                <tr>
+                    <td>Chủ nhật</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Cung thể thao Quần Ngựa</td>
+                    <td>Thành viên mới</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
