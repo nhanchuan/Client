@@ -1,0 +1,225 @@
+@page
+@model PlayingScheduleModel
+@{
+    ViewData["Title"] = "Lịch chơi";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="mb-4">
+    <p class="lead">Lịch tập luyện và chơi cầu lông của câu lạc bộ</p>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="alert alert-primary">
+            <h5>📅 Tuần này (13/01 - 19/01/2025)</h5>
+            <p class="mb-0">Lịch chơi và tập luyện trong tuần</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h6 class="mb-0">Thứ 2 - 13/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 19:00 - 21:00</strong></p>
+                <p><strong>📍 Sân Thống Nhất</strong></p>
+                <p>Tập luyện chung</p>
+                <hr>
+                <small class="text-muted">Đã có 12 người đăng ký</small><br>
+                <button class="btn btn-sm btn-success mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h6 class="mb-0">Thứ 3 - 14/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 20:00 - 22:00</strong></p>
+                <p><strong>📍 Sân Hoàng Mai</strong></p>
+                <p>Chơi tự do</p>
+                <hr>
+                <small class="text-muted">Đã có 8 người đăng ký</small><br>
+                <button class="btn btn-sm btn-info mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h6 class="mb-0">Thứ 4 - 15/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 19:00 - 21:00</strong></p>
+                <p><strong>📍 Sân Thống Nhất</strong></p>
+                <p>Tập luyện chung</p>
+                <hr>
+                <small class="text-muted">Đã có 15 người đăng ký</small><br>
+                <button class="btn btn-sm btn-success mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-warning text-dark">
+                <h6 class="mb-0">Thứ 5 - 16/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 19:30 - 21:30</strong></p>
+                <p><strong>📍 Cung Quần Ngựa</strong></p>
+                <p>Luyện tập nâng cao</p>
+                <hr>
+                <small class="text-muted">Đã có 6 người đăng ký</small><br>
+                <button class="btn btn-sm btn-warning mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h6 class="mb-0">Thứ 6 - 17/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 19:00 - 21:00</strong></p>
+                <p><strong>📍 Sân Thống Nhất</strong></p>
+                <p>Tập luyện chung</p>
+                <hr>
+                <small class="text-muted">Đã có 10 người đăng ký</small><br>
+                <button class="btn btn-sm btn-success mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h6 class="mb-0">Thứ 7 - 18/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 8:00 - 12:00</strong></p>
+                <p><strong>📍 Sân Hoàng Mai</strong></p>
+                <p>Tập luyện cuối tuần</p>
+                <hr>
+                <small class="text-muted">Đã có 18 người đăng ký</small><br>
+                <button class="btn btn-sm btn-primary mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h6 class="mb-0">Chủ nhật - 19/01</h6>
+            </div>
+            <div class="card-body">
+                <p><strong>🕐 14:00 - 17:00</strong></p>
+                <p><strong>📍 Cung Quần Ngựa</strong></p>
+                <p>Dành cho thành viên mới</p>
+                <hr>
+                <small class="text-muted">Đã có 5 người đăng ký</small><br>
+                <button class="btn btn-sm btn-danger mt-2">Tham gia</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0">Ghi chú tuần này</h6>
+            </div>
+            <div class="card-body">
+                <ul class="mb-0">
+                    <li>Thứ 6: Có huấn luyện viên hướng dẫn</li>
+                    <li>Thứ 7: Tập luyện dài, mang đồ ăn nhẹ</li>
+                    <li>Chủ nhật: Chỉ dành cho người mới bắt đầu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h4>Lịch tháng 1/2025</h4>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Ngày</th>
+                    <th>Thứ</th>
+                    <th>Thời gian</th>
+                    <th>Địa điểm</th>
+                    <th>Hoạt động</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20/01</td>
+                    <td>Thứ 2</td>
+                    <td>19:00 - 21:00</td>
+                    <td>Sân Thống Nhất</td>
+                    <td>Tập luyện chung</td>
+                    <td><span class="badge bg-success">Mở đăng ký</span></td>
+                </tr>
+                <tr>
+                    <td>22/01</td>
+                    <td>Thứ 4</td>
+                    <td>19:00 - 21:00</td>
+                    <td>Sân Thống Nhất</td>
+                    <td>Tập luyện chung</td>
+                    <td><span class="badge bg-success">Mở đăng ký</span></td>
+                </tr>
+                <tr>
+                    <td>24/01</td>
+                    <td>Thứ 6</td>
+                    <td>19:00 - 21:00</td>
+                    <td>Sân Thống Nhất</td>
+                    <td>Tập luyện chung</td>
+                    <td><span class="badge bg-success">Mở đăng ký</span></td>
+                </tr>
+                <tr>
+                    <td>25/01</td>
+                    <td>Thứ 7</td>
+                    <td>8:00 - 12:00</td>
+                    <td>Sân Hoàng Mai</td>
+                    <td>Tập luyện cuối tuần</td>
+                    <td><span class="badge bg-primary">Mở đăng ký</span></td>
+                </tr>
+                <tr class="table-warning">
+                    <td>29/01 - 02/02</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Nghỉ Tết Nguyên Đán</td>
+                    <td><span class="badge bg-warning text-dark">Tạm nghỉ</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="mt-4">
+    <div class="alert alert-info">
+        <h5>💡 Lưu ý cho thành viên</h5>
+        <ul class="mb-0">
+            <li>Đăng ký trước ít nhất 1 ngày để đảm bảo có chỗ</li>
+            <li>Mang giày thể thao chuyên dụng và vợt cầu lông</li>
+            <li>Đến đúng giờ để không làm ảnh hưởng đến buổi tập</li>
+            <li>Có thể hủy đăng ký trước 2 tiếng</li>
+        </ul>
+    </div>
+</div>

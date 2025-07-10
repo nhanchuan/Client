@@ -1,0 +1,218 @@
+@page
+@model MembersModel
+@{
+    ViewData["Title"] = "Thành viên tham gia";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="mb-4">
+    <p class="lead">Danh sách thành viên câu lạc bộ cầu lông</p>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-primary">45</h2>
+                <p>Tổng thành viên</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-success">32</h2>
+                <p>Thành viên tích cực</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-info">8</h2>
+                <p>Thành viên mới</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="text-warning">5</h2>
+                <p>Huấn luyện viên</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Ban quản lý</h4>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Họ tên</th>
+                        <th>Chức vụ</th>
+                        <th>Kinh nghiệm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nguyễn Văn A</td>
+                        <td><span class="badge bg-danger">Chủ tịch CLB</span></td>
+                        <td>10 năm</td>
+                    </tr>
+                    <tr>
+                        <td>Trần Thị B</td>
+                        <td><span class="badge bg-warning">Phó chủ tịch</span></td>
+                        <td>8 năm</td>
+                    </tr>
+                    <tr>
+                        <td>Lê Văn C</td>
+                        <td><span class="badge bg-info">Thư ký</span></td>
+                        <td>5 năm</td>
+                    </tr>
+                    <tr>
+                        <td>Phạm Thị D</td>
+                        <td><span class="badge bg-success">Thủ quỹ</span></td>
+                        <td>6 năm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <h4>Huấn luyện viên</h4>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Họ tên</th>
+                        <th>Chuyên môn</th>
+                        <th>Trình độ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hoàng Văn E</td>
+                        <td>Đơn nam</td>
+                        <td><span class="badge bg-primary">Cấp quốc gia</span></td>
+                    </tr>
+                    <tr>
+                        <td>Đỗ Thị F</td>
+                        <td>Đơn nữ, Đôi nữ</td>
+                        <td><span class="badge bg-primary">Cấp quốc gia</span></td>
+                    </tr>
+                    <tr>
+                        <td>Vũ Văn G</td>
+                        <td>Đôi nam</td>
+                        <td><span class="badge bg-secondary">Cấp tỉnh</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mai Thị H</td>
+                        <td>Đôi mixed</td>
+                        <td><span class="badge bg-secondary">Cấp tỉnh</span></td>
+                    </tr>
+                    <tr>
+                        <td>Đinh Văn I</td>
+                        <td>Kỹ thuật cơ bản</td>
+                        <td><span class="badge bg-secondary">Cấp tỉnh</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h4>Danh sách thành viên</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-active-tab" data-bs-toggle="tab" data-bs-target="#nav-active" type="button" role="tab">
+                        Thành viên tích cực
+                    </button>
+                    <button class="nav-link" id="nav-new-tab" data-bs-toggle="tab" data-bs-target="#nav-new" type="button" role="tab">
+                        Thành viên mới
+                    </button>
+                    <button class="nav-link" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab">
+                        Tất cả thành viên
+                    </button>
+                </div>
+            </nav>
+            
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-active" role="tabpanel">
+                    <div class="mt-3">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6>Nguyễn Thành J - <span class="text-muted">Nam</span></h6>
+                                        <p class="mb-1">Tuổi: 28 | Kinh nghiệm: 5 năm</p>
+                                        <small class="text-success">Tham gia đều đặn</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6>Lê Thị K - <span class="text-muted">Nữ</span></h6>
+                                        <p class="mb-1">Tuổi: 25 | Kinh nghiệm: 3 năm</p>
+                                        <small class="text-success">Tham gia đều đặn</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-new" role="tabpanel">
+                    <div class="mt-3">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6>Trần Văn L - <span class="text-muted">Nam</span></h6>
+                                        <p class="mb-1">Tuổi: 22 | Mới tham gia: 1 tháng</p>
+                                        <small class="text-info">Thành viên mới</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6>Phạm Thị M - <span class="text-muted">Nữ</span></h6>
+                                        <p class="mb-1">Tuổi: 30 | Mới tham gia: 2 tuần</p>
+                                        <small class="text-info">Thành viên mới</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-all" role="tabpanel">
+                    <div class="mt-3">
+                        <p class="text-center text-muted">
+                            Hiển thị tất cả 45 thành viên của câu lạc bộ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <div class="alert alert-info">
+        <h5>Muốn tham gia câu lạc bộ?</h5>
+        <p class="mb-2">Liên hệ với chúng tôi để đăng ký thành viên mới:</p>
+        <ul class="mb-0">
+            <li>Email: contact@caulongclb.com</li>
+            <li>Điện thoại: 0123-456-789</li>
+            <li>Địa chỉ: Sân cầu lông Thống Nhất, Hà Nội</li>
+        </ul>
+    </div>
+</div>

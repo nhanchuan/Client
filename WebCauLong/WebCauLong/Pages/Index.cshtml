@@ -1,10 +1,67 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Trang chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mb-5">
+    <h1 class="display-4">Câu lạc bộ Cầu lông</h1>
+    <p class="lead">Chào mừng bạn đến với câu lạc bộ cầu lông của chúng tôi</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">🏸 Về chúng tôi</h5>
+                <p class="card-text">
+                    Câu lạc bộ cầu lông với nhiều năm kinh nghiệm, tập hợp những người yêu thích môn thể thao này.
+                    Chúng tôi tổ chức các buổi tập luyện thường xuyên và các giải đấu hấp dẫn.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">🏆 Hoạt động</h5>
+                <p class="card-text">
+                    - Tổ chức các giải đấu hàng tháng<br/>
+                    - Buổi tập luyện thường xuyên<br/>
+                    - Giao lưu với các CLB khác<br/>
+                    - Đào tạo kỹ năng cho thành viên mới
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h6 class="card-title">Lịch thi đấu</h6>
+                <p class="card-text">Xem lịch các giải đấu sắp tới</p>
+                <a href="/TournamentSchedule" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h6 class="card-title">Thành viên</h6>
+                <p class="card-text">Danh sách thành viên tham gia</p>
+                <a href="/Members" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h6 class="card-title">Sân chơi</h6>
+                <p class="card-text">Địa chỉ và thông tin các sân</p>
+                <a href="/Courts" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+        </div>
+    </div>
 </div>
